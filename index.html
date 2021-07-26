@@ -16,6 +16,9 @@
 
     <!-- bootstrap -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script> -->
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -29,7 +32,7 @@
             <div class="container">
 
                 <div class="navbar-inner">
-                    <nav id="navbar">
+                    <nav id="navbar" class="navbar">
                         <div class="logo">
                             <a href="">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="#0074D9"
@@ -56,7 +59,13 @@
                             </a>
                         </div>
 
-                        <div class="flex collapse">
+                        <div class="nav-button navbar-toggler" data-toggle="collapse" data-target="#navbarMenu" ria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                            <span class="bar bar3"></span>
+                        </div>
+
+                        <div id="navbarMenu">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a href="" class="nav-link">About</a>
@@ -75,18 +84,26 @@
                                 </a>
                             </div>
                         </div>
-
                         
-                    
-                        <div class="nav-button" data-toggle="collapse">
-                            <span class="bar bar1"></span>
-                            <span class="bar bar2"></span>
-                            <span class="bar bar3"></span>
-                        </div>
                     </nav>
                 </div>
 
             </div>
+
+            <div id="navbarMenuMobile">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
         </header>
 
         <div class="container">
@@ -154,7 +171,7 @@
                             </p>
                         </div>
                     </div>
-                    <!-- <div id="worksBnr" class="col-md-7">
+                    <div id="worksBnr" class="col-md-7">
                         <div class="worksBnr-head">
                             <h2>Works</h2>
                             <a class="setting-btn" href="javascript:void(0)" >
@@ -166,31 +183,36 @@
                         <div class="worksBnr-title">
                             <h1>Lorem ipsum dolor sit amet,<br> consectetur</h1>
                         </div>
-                        <div class="works-card">
-                            <div class="card">
-                                <div class="card-image"></div>
-                                <div class="card-body">
-                                    <h2 class="card-title">work-class-name</h2>
-                                    <p class="card-text">
-                                        Adobe Photoshop & illustrator Working Time : 4 Days<br>
-                                        Size : 1,020 x 1,020 x 460 (mm)
-                                    </p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div id="cardCarousel" class="cardCarousel">
+                            <div class="works-card">
+
+                                <div class="card">
+                                    <div class="card-image"></div>
+                                    <div class="card-body">
+                                        <h2 class="card-title">work-class-name</h2>
+                                        <p class="card-text">
+                                            Adobe Photoshop & illustrator Working Time : 4 Days<br>
+                                            Size : 1,020 x 1,020 x 460 (mm)
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-image"></div>
-                                <div class="card-body">
-                                    <h2>work-class-name</h2>
-                                    <p class="card-text">
-                                        Adobe Photoshop & illustrator Working Time : 4 Days<br>
-                                        Size : 1,020 x 1,020 x 460 (mm)
-                                    </p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                
+                                <div class="card">
+                                    <div class="card-image"></div>
+                                    <div class="card-body">
+                                        <h2>work-class-name</h2>
+                                        <p class="card-text">
+                                            Adobe Photoshop & illustrator Working Time : 4 Days<br>
+                                            Size : 1,020 x 1,020 x 460 (mm)
+                                        </p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
-                    </div> -->
+                    </div>
 
                 </div>
             </section>
@@ -231,7 +253,9 @@
         </div> -->
     </div>
     <footer>
-        <p>Copyright ©2021 All tight reserved | make by Designer Soot</p>
+        <div class="footer-inner">
+            <p>Copyright ©2021 All tight reserved <br><span>|</span> make by Designer Soot</p>
+        </div>
     </footer>
     <!-- body-wrapper -->
 </body>

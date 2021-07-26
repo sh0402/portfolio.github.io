@@ -39,8 +39,8 @@ html {
 .container {
     width: 100%;
     max-width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 16px;
+    padding-left: 16px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -53,6 +53,26 @@ html {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+}
+
+.setting-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: .5rem;
+}
+
+.setting-btn:last-child {
+    margin-bottom: 0;
+}
+
+.setting-btn span {
+    cursor: pointer;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #222;
+    margin-bottom: 4px;
 }
 
 
@@ -114,7 +134,7 @@ html {
     flex: 0;
 }
 
-.flex {
+#navbarMenu {
     display: flex;
     align-items: center;
 }
@@ -130,20 +150,16 @@ html {
     margin-right: 64px;
 }
 
-.sns {
+#navbar .sns {
     position: absolute;
     right: 0;
 }
 
-.sns i {
+#navbar .sns i {
     font-size: 32px;
 }
 
-.nav-button {
-    padding: 12px;
-}
-
-.nav-button .bar {
+#navbar .nav-button .bar {
     display: block;
     background-color: #666;
     width: 20px;
@@ -163,7 +179,7 @@ html {
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .25);
 }
 
-.mainBnr-element-left {
+#mainBnr .mainBnr-element-left {
     position: absolute;
     top: 50%;
     left: 0;
@@ -172,17 +188,17 @@ html {
     width: 645px;
 }
 
-.mainBnr-element-left h1 {
+#mainBnr .mainBnr-element-left h1 {
     font-size: 48px;
     font-weight: 900;
 }
 
-.mainBnr-element-left p {
+#mainBnr .mainBnr-element-left p {
     color: #747474;
     font-size: 20px;
 }
 
-.mainBnr-element-right {
+#mainBnr .mainBnr-element-right {
     width: 45%;
     height: 100%;
     margin-left: auto;
@@ -205,33 +221,19 @@ html {
     margin-right: auto;
 }
 
-.aboutBnr-head {
+#aboutBnr .aboutBnr-head {
     display: flex;
     justify-content: space-between;
     margin-bottom: 32px;
 }
 
-.aboutBnr-head h2 {
+#aboutBnr .aboutBnr-head h2 {
     font-size: 24px;
     font-weight: 900;
+    margin: 0;
 }
 
-.setting-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: .5rem;
-}
-
-.setting-btn span {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: #222;
-    margin-bottom: 4px;
-}
-
-.aboutBnr-thumb {
+#aboutBnr .aboutBnr-thumb {
     display: flex;
     justify-content: center;
     width: 200px;
@@ -243,25 +245,27 @@ html {
     margin-bottom: 32px;
 }
 
-.aboutBnr-title {
+#aboutBnr .aboutBnr-title {
     margin-bottom: 32px;
 }
 
-.aboutBnr-title h1 {
+#aboutBnr .aboutBnr-title h1 {
     font-size: 32px;
     font-weight: 900;
     text-align: center;
+    margin: 0;
 }
 
-.aboutBnr-item {
-    display: grid;
-    grid-template-columns: repeat(2, 48%);
-    grid-template-rows: repeat(4, 1fr);
+#aboutBnr .aboutBnr-item {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 auto;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.aboutBnr-item-title h3 {
+#aboutBnr .aboutBnr-item-title h3 {
     color: #fff;
     font-size: 20px;
     font-weight: 600;
@@ -273,17 +277,20 @@ html {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .25);
 }
 
-.aboutBnr-element {
-    font-size: 1em;
+#aboutBnr .aboutBnr-element {
+    width: 49%;
+    font-size: 16px;
     color: #0074D9;
     font-weight: bold;
-    padding: 8px;
     text-align: center;
     background-color: #0074d910;
     border-radius: 8px;
+    padding: 12px 0;
+    margin: 0;
+    margin-bottom: 6px;
 }
 
-.aboutBnr-element:nth-child(2n) {
+#aboutBnr .aboutBnr-element:nth-child(2n) {
     margin-right: 0;
 }
 
@@ -324,6 +331,27 @@ html {
     display: flex;
 }
 
+#cardCarousel {
+    display: flex;
+    overflow: scroll;
+    overflow: hidden;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    /* Hide the scrollbar for MS Edge */
+    scrollbar-width: none;
+    /* Hide the scrollbar for Mozilla Firefox */
+    height: fit-content;
+    width: fit-content;
+    width: 100%;
+}
+
+#cardCarousel::-webkit-scrollbar {
+    display: none;
+    /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
+    -webkit-overflow-scrolling: touch;
+    /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+}
+
 .card {
     width: 270px;
     background-color: #f1f3f4;
@@ -361,19 +389,29 @@ html {
 
 /* FOOTER */
 footer {
-    display: table;
     margin-top: 64px;
     width: 100%;
-    height: 160px;
-    text-align: center;
     background-color: #fff;
 }
 
-footer p {
+.footer-inner {
+    display: table;
+    text-align: center;
+    height: 160px;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .footer-inner p {
     font-weight: 500;
     display: table-cell;
     vertical-align: middle;
     color: #747474;
+}
+
+footer .footer-inner p br {
+    display: none;
 }
 
 
