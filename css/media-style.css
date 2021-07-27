@@ -1,21 +1,54 @@
+
 @media (min-width: 768px) {
-    .navbar-toggler {
-        display: none;
+    .col-md-4 {
+        flex: 0 0 32%;
+        max-width: 32%;
+        padding-left: 0;
+        padding-right: 0;
     }
 
-    #navbarMenuMobile {
+    .col-md-5 {
+        flex: 0 0 38.6666666667%;
+        max-width: 38.6666666667%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .col-md-7 {
+        flex: 0 0 58.6666666667%;
+        max-width: 58.6666666667%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .col-md-8 {
+        flex: 0 0 65.3333333333%;
+        max-width: 65.3333333333%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #navbarMenuMo {
+        visibility: hidden;
+    }
+
+    .navbar-toggler {
         display: none;
     }
 }
 
 @media (max-width: 768px) {
 
+    #navbar .sns {
+        display: none;
+    }
+
     .container {
         padding-right: 24px;
         padding-left: 24px;
     }
 
-    #header {
+    header {
         height: 64px;
     }
 
@@ -25,7 +58,7 @@
     }
 
     #navbar .logo svg {
-        width: 32px;
+        width: 24px;
     }
 
     #navbar .logo,
@@ -34,41 +67,11 @@
     }
 
     #navbarMenu {
-        display: none;
-    }
-
-    .navbar-nav {
-       
+        visibility: hidden;
     }
 
     #navbarMenu .sns {
         display: none;
-    }
-
-    #navbarMenuMobile {
-        position: absolute;
-        overflow-y: scroll;
-        top: 64px;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        height: calc(100% - 50px);
-        min-height: 667px;
-        background-color: #fff;
-    }
-    #navbarMenuMobile ul {
-        padding: 0;
-    }
-    #navbarMenuMobile li {
-        border: 1px solid #ddd;
-        align-items: center;
-        list-style: none;
-        text-align: center;
-        padding: 64px;
-    }
-
-    #navbarMenuMobile li a {
-        
     }
 
     #mainBnr {
@@ -112,12 +115,15 @@
     }
 
 
-    #aboutBnr {
+    #aboutBnr,
+    #worksBnr {
         padding: 24px 16px;
     }
 
     #aboutBnr .aboutBnr-head,
-    #aboutBnr .aboutBnr-title {
+    #aboutBnr .aboutBnr-title,
+    #worksBnr .worksBnr-head,
+    #worksBnr .worksBnr-title {
         margin-bottom: 24px;
     }
 
@@ -125,7 +131,8 @@
         font-size: 20px;;
     }
 
-    #aboutBnr .aboutBnr-title h1 {
+    #aboutBnr .aboutBnr-title h1,
+    #worksBnr .worksBnr-title h1 {
         font-size: 24px;
     }
 
@@ -137,8 +144,32 @@
         font-size: 12px;
     }
 
-    .worksBnr-head h2 {
+    #worksBnr .worksBnr-head h2 {
         font-size: 16px;
+    }
+
+    #worksBnr .worksBnr-title h1 br {
+        display: none;
+    }
+
+    .card {
+        width: 210px;
+        border-radius: 8px;
+        margin-right: 8px;
+    }
+
+    .card-image {
+        width: 210px;
+        height: 210px;
+    }
+
+    .card h2  {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .card p  {
+        font-size: 12px;
     }
 
 
