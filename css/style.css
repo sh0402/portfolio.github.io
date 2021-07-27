@@ -425,6 +425,28 @@ header {
     color: #747474;
 }
 
+.cardCarousel-controls {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cardCarousel-controls a {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cardCarousel-control-prev,
+.cardCarousel-control-next {
+    display: flex;
+    flex-direction: row;
+}
+.cardCarousel-control-next-icon {
+    display: block;
+    order: 2;
+}
+
 
 /* FOOTER */
 footer {
