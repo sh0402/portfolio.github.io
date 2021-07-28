@@ -10,15 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!-- bootstrap -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -64,6 +67,12 @@
                         <span class="bar bar3"></span>
                     </div>
                     
+                    <div class="sns">
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+
                     <div id="navbarMenu">
                         <ul class="navbar-nav">
                             <li class="nav-item">
@@ -76,12 +85,6 @@
                                 <a href="" class="nav-link">Contact</a>
                             </li>
                         </ul>
-                    </div>
-
-                    <div class="sns">
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
                     </div>
 
                 </nav>
@@ -189,8 +192,8 @@
                             <h1>Lorem ipsum dolor sit amet,<br> consectetur</h1>
                         </div>
 
-                        <div id="cardCarousel" class="cardCarousel">
-                            <div class="works-card">
+                        <div id="cardCarousel" class="cardCarousel carousel slide swiper-container" data-ride="carousel">
+                            <div class="works-card ">
 
                                 <div class="card">
                                     <div class="card-image"></div>
@@ -231,11 +234,11 @@
                             </div>
                         </div>
                         <div class="cardCarousel-controls">
-                            <a href="#cardCarousel" class="cardCarousel-control-prev">
+                            <a href="javascript:void(0);" onclick="controlPrevBtn();" class="cardCarousel-control-btn cardCarousel-control-prev" data-slide="prev">
                                 <span class="cardCarousel-control-prev-icon"><i class="fas fa-chevron-left"></i></span>
                                 <span>Prev</span>
                             </a>
-                            <a href="#cardCarousel" class="cardCarousel-control-next">
+                            <a href="javascript:void(0);" onclick="controlNextBtn();" class="cardCarousel-control-btn cardCarousel-control-next" data-slide="next">
                                 <span class="cardCarousel-control-next-icon"><i class="fas fa-chevron-right"></i></span>
                                 <span>Next</span>
                             </a>
@@ -286,5 +289,8 @@
         </div>
     </footer>
     <!-- body-wrapper -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
 </body>
 </html>

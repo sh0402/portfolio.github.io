@@ -4,17 +4,25 @@ $(function () {
     });
 });
 
+$(document).ready(function(){ 
+    $('.works-card').css('width', $(window).width()); 
+    $('.works-card').css('height', $(window).height()); 
+    $(window).resize(function() { 
+        $('.works-card').css('width', $(window).width()); 
+        $('.works-card').css('height', $(window).height()); 
+    }); 
+});
 
-$("#cardCarousel").click(function () {
-    if ($("span", this).hasClass("icon-Pause")) {
-        $('#carouselExampleControls').carousel('pause');
-        $(this).attr("aria-label", "Play Carousel");
-        $(this).attr("title", "Play Carousel");
-        $("span", this).toggleClass("icon-Pause icon-Play");
-    } else {
-        $('#carouselExampleControls').carousel('cycle');
-        $(this).attr("aria-label", "Pause Carousel");
-        $(this).attr("title", "Pause Carousel");
-        $("span", this).toggleClass("icon-Play icon-Pause");
-    }
+controlNextBtn = function() {
+    var _scrollX = $('.cardCarousel').scrollLeft();
+    $('.cardCarousel').scrollLeft(_scrollX + 150);
+};
+
+controlPrevBtn = function() {
+    var _scrollX = $('.cardCarousel').scrollLeft();
+    $('.cardCarousel').scrollLeft(_scrollX - 150);
+};
+
+new Swiper('.works-card', {
+    draggable : true
 });

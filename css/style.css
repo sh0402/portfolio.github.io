@@ -131,6 +131,7 @@ header {
 #navbar ul li a {
     color: #0074D9;
 }
+
 #navbar .sns {
     position: absolute;
     right: 0;
@@ -141,6 +142,7 @@ header {
 }
 
 #navbar .nav-button {
+    display: none;
     position: absolute;
     cursor: pointer;
     right: 0;
@@ -153,6 +155,11 @@ header {
     height: 2px;
     margin-bottom: 4px;
     transition: all 0.3s ease;
+}
+
+#navbarMenuMo {
+    position: absolute;
+    visibility: hidden;
 }
 
 .nav-open #navbarMenuMo {
@@ -383,6 +390,10 @@ header {
     width: 100%;
 }
 
+.works-card {
+    max-height: 500px;
+}
+
 #cardCarousel::-webkit-scrollbar {
     display: none;
     /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
@@ -565,10 +576,6 @@ aside {
 .myInfo-container li {
     display: flex;
     flex-direction: column;
-    
-}
-
-.myInfo-container li p {
     
 }
 

@@ -29,20 +29,16 @@
     }
 
     #navbarMenuMo {
+        display: none;
         visibility: hidden;
     }
 
-    .navbar-toggler {
-        display: none;
+    #navbar .sns {
+        display: block;
     }
 }
 
 @media (max-width: 768px) {
-
-    #navbar .sns {
-        display: none;
-    }
-
     .container {
         padding-right: 24px;
         padding-left: 24px;
@@ -66,11 +62,15 @@
         margin-right: 24px;
     }
 
+    #navbar .nav-button {
+        display: block;
+    }
+
     #navbarMenu {
         visibility: hidden;
     }
 
-    #navbarMenu .sns {
+    #navbar .sns {
         display: none;
     }
 
@@ -114,7 +114,6 @@
         border-radius: 16px 16px 0 0;
     }
 
-
     #aboutBnr,
     #worksBnr {
         padding: 24px 16px;
@@ -150,6 +149,10 @@
 
     #worksBnr .worksBnr-title h1 br {
         display: none;
+    }
+
+    .works-card {
+        max-height: 390px;
     }
 
     .card {
@@ -193,3 +196,4 @@
         display: none;
     }
 }
+
