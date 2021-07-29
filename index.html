@@ -68,7 +68,7 @@
                     </div>
                     
                     <div class="sns">
-                        <a href="#">
+                        <a href="https://www.instagram.com/daily_soot" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -193,45 +193,52 @@
                         </div>
 
                         <div id="cardCarousel" class="cardCarousel carousel slide swiper-container" data-ride="carousel">
-                            <div class="works-card ">
-
-                                <div class="card">
-                                    <div class="card-image"></div>
-                                    <div class="card-body">
-                                        <h2>work-class-name</h2>
-                                        <p>
-                                            Adobe Photoshop & illustrator Working Time : 4 Days<br>
-                                            Size : 1,020 x 1,020 x 460 (mm)
-                                        </p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
+                            
+                            <div class="card">
+                                <div class="card-image"></div>
+                                <div class="card-body">
+                                    <h2>work-class-name</h2>
+                                    <p>
+                                        Adobe Photoshop & illustrator Working Time : 4 Days<br>
+                                        Size : 1,020 x 1,020 x 460 (mm)
+                                    </p>
+                                    <a href="#" class="btn btn-primary">
+                                        Lead More 
+                                        <!-- <i class="fas fa-chevron-right"></i> -->
+                                    </a>
                                 </div>
-                                
-                                <div class="card">
-                                    <div class="card-image"></div>
-                                    <div class="card-body">
-                                        <h2>work-class-name</h2>
-                                        <p>
-                                            Adobe Photoshop & illustrator Working Time : 4 Days<br>
-                                            Size : 1,020 x 1,020 x 460 (mm)
-                                        </p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <div class="card-image"></div>
-                                    <div class="card-body">
-                                        <h2>work-class-name</h2>
-                                        <p>
-                                            Adobe Photoshop & illustrator Working Time : 4 Days<br>
-                                            Size : 1,020 x 1,020 x 460 (mm)
-                                        </p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-
                             </div>
+                            
+                            <div class="card">
+                                <div class="card-image"></div>
+                                <div class="card-body">
+                                    <h2>work-class-name</h2>
+                                    <p>
+                                        Adobe Photoshop & illustrator Working Time : 4 Days<br>
+                                        Size : 1,020 x 1,020 x 460 (mm)
+                                    </p>
+                                    <a href="#" class="btn btn-primary">
+                                        Lead More 
+                                        <!-- <i class="fas fa-chevron-right"></i> -->
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-image"></div>
+                                <div class="card-body">
+                                    <h2>work-class-name</h2>
+                                    <p>
+                                        Adobe Photoshop & illustrator Working Time : 4 Days<br>
+                                        Size : 1,020 x 1,020 x 460 (mm)
+                                    </p>
+                                    <a href="#" class="btn btn-primary">
+                                        Lead More 
+                                        <!-- <i class="fas fa-chevron-right"></i> -->
+                                    </a>
+                                </div>
+                            </div>
+                            
                         </div>
                         <div class="cardCarousel-controls">
                             <a href="javascript:void(0);" onclick="controlPrevBtn();" class="cardCarousel-control-btn cardCarousel-control-prev" data-slide="prev">
@@ -291,6 +298,39 @@
     <!-- body-wrapper -->
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        const slider = document.getElementById('cardCarousel');
+        let isMouseDown = false;
+        let startX, scrollLeft;
+      
+        slider.addEventListener('mousedown', (e) => {
+          isMouseDown = true;
+          slider.classList.add('active');
+      
+          startX = e.pageX - slider.offsetLeft;
+          scrollLeft = slider.scrollLeft;
+        });
+        
+        slider.addEventListener('mouseleave', () => {
+          isMouseDown = false;
+          slider.classList.remove('active');
+        });
+        
+        slider.addEventListener('mouseup', () => {
+          isMouseDown = false;
+          slider.classList.remove('active');
+        });
+      
+        slider.addEventListener('mousemove', (e) => {
+          if (!isMouseDown) return;
+      
+          e.preventDefault();
+          const x = e.pageX - slider.offsetLeft;
+          const walk = (x - startX) * 1;
+          slider.scrollLeft = scrollLeft - walk;
+        });
+      </script>
     
 </body>
 </html>

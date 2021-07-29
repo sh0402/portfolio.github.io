@@ -28,6 +28,7 @@ html {
 
 a {
     text-decoration: none;
+    color: 333;
 }
 
 ul, li {
@@ -47,8 +48,8 @@ ul, li {
 .container {
     width: 100%;
     max-width: 1200px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 1rem;
+    padding-left: 1rem;
     margin-right: auto;
     margin-left: auto;
 }
@@ -67,7 +68,7 @@ ul, li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 .setting-btn:last-child {
@@ -76,19 +77,16 @@ ul, li {
 
 .setting-btn span {
     cursor: pointer;
-    width: 4px;
-    height: 4px;
+    width: 0.25rem;
+    height: 0.25rem;
     border-radius: 50%;
     background-color: #222;
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
 }
 
 
 
-
-
 /* HEADER */
-
 header {
     position: absolute;
     position: fixed;
@@ -110,11 +108,11 @@ header {
 }
 
 #navbar .logo {
-    margin-right: 32px;
+    margin-right: 2rem;
 }
 
 #navbar .logo svg {
-    width: 30px;
+    width: 2rem;
 }
 
 #navbar ul {
@@ -125,7 +123,7 @@ header {
 
 #navbar ul li {
     font-weight: 500;
-    padding: 24px 32px;
+    padding: 1.5rem 2rem;
 }
 
 #navbar ul li a {
@@ -138,7 +136,8 @@ header {
 }
 
 #navbar .sns i {
-    font-size: 32px;
+    font-size: 2rem;
+    color: #0074D9;
 }
 
 #navbar .nav-button {
@@ -151,9 +150,9 @@ header {
 #navbar .nav-button .bar {
     display: block;
     background-color: #666;
-    width: 20px;
-    height: 2px;
-    margin-bottom: 4px;
+    width: 1.25rem;
+    height: 0.125rem;
+    margin-bottom: 0.25rem;
     transition: all 0.3s ease;
 }
 
@@ -174,6 +173,7 @@ header {
     min-height: 100vh;
     background-color: #fff;
     z-index: -1;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-open #navbarMenuMo ul {
@@ -189,11 +189,11 @@ header {
 }
 
 .nav-open #navbarMenuMo ul li {
-    padding: 24px 0;
+    padding: 1.5rem 0;
 }
 
 .nav-open #navbarMenuMo ul li a {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #0074D9;
 }
@@ -216,8 +216,8 @@ header {
     position: relative;
     width: 100%;
     height: 600px;
-    margin-top: 128px;
-    border-radius: 16px;
+    margin-top: 8rem;
+    border-radius: 1rem;
     background-color: #fff;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .25);
 }
@@ -226,19 +226,19 @@ header {
     position: absolute;
     top: 50%;
     left: 0;
+    width: 55%;
+    padding: 0 4rem;
     transform: translate(0, -50%);
-    padding: 0 64px;
-    width: 645px;
 }
 
 #mainBnr .mainBnr-element-left h1 {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 900;
 }
 
 #mainBnr .mainBnr-element-left p {
     color: #747474;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 #mainBnr .mainBnr-element-right {
@@ -249,16 +249,16 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 0 16px 16px 0;
+    border-radius: 0 1rem 1rem 0;
 }
 
 
 /* ABOUT BANNER */
 #aboutBnr {
     width: 100%;
-    margin-top: 32px;
-    padding: 32px;
-    border-radius: 16px;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
     background-color: #fff;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .25);
     margin-right: auto;
@@ -267,11 +267,11 @@ header {
 #aboutBnr .aboutBnr-head {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 #aboutBnr .aboutBnr-head h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 900;
     margin: 0;
 }
@@ -285,15 +285,17 @@ header {
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 #aboutBnr .aboutBnr-title {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 #aboutBnr .aboutBnr-title h1 {
-    font-size: 32px;
+    font-size: 2rem;
+
+text-align: center;
     font-weight: 900;
     margin: 0;
 }
@@ -309,27 +311,27 @@ header {
 
 #aboutBnr .aboutBnr-item-title h3 {
     color: #fff;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 16px;
-    padding: 8px;
-    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
     background-color: #0074D9;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .25);
 }
 
 #aboutBnr .aboutBnr-element {
     width: 49%;
-    font-size: 16px;
+    font-size: 1rem;
     color: #0074D9;
     font-weight: bold;
     text-align: center;
     background-color: #0074d910;
-    border-radius: 8px;
-    padding: 12px 0;
+    border-radius: 0.5rem;
+    padding: 1rem 0;
     margin: 0;
-    margin-bottom: 6px;
+    margin-bottom: 0.5rem;
 }
 
 #aboutBnr .aboutBnr-element:nth-child(2n) {
@@ -339,10 +341,13 @@ header {
 
 /* WORKS BANNER */
 #worksBnr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
-    margin-top: 32px;
-    padding: 32px;
-    border-radius: 16px;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
     background-color: #fff;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .25);
     margin-left: auto;
@@ -351,47 +356,39 @@ header {
 #worksBnr .worksBnr-head {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 32px;
+    margin-bottom: 1rem;
 }
 
 #worksBnr .worksBnr-head h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 900;
     margin: 0;
 }
 
-.worksBnr-title {
+#worksBnr .worksBnr-title {
     text-align: left;
-    margin-bottom: 32px;
+    margin-bottom: 1rem;
 }
 
 #worksBnr .worksBnr-title h1 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 900;
     margin: 0;
 }
 
-
-#worksBnr .works-card {
-    display: flex;
-}
-
+/* CARD CAROUSEL SLIDE */
 #cardCarousel {
+    position: relative;
     display: flex;
-    overflow: scroll;
-    overflow: hidden;
-    overflow-x: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
     -ms-overflow-style: none;
     /* Hide the scrollbar for MS Edge */
     scrollbar-width: none;
     /* Hide the scrollbar for Mozilla Firefox */
-    height: fit-content;
-    width: fit-content;
     width: 100%;
-}
-
-.works-card {
-    max-height: 500px;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 
 #cardCarousel::-webkit-scrollbar {
@@ -401,51 +398,66 @@ header {
     /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
 }
 
-.card {
+#cardCarousel.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+
+#cardCarousel .card {
     width: 270px;
     background-color: #f1f3f4;
-    border-radius: 8px;
-    margin-right: 24px;
+    border-radius: 0.5rem;
+    margin-right: 1.5rem;
     border: none;
 }
 
-.card-image {
+#cardCarousel .card .card-image {
     display: block;
     width: 270px;
     height: 270px;
     background-color: blue;
-    border-radius: 8px 8px 0 0;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.card-body {
-    padding: 24px 16px;
+#cardCarousel .card .card-body {
+    padding: 2rem 1rem;
 }
 
-.card-body a {
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .25);
-}
-
-.card h2  {
-    font-size: 24px;
+#cardCarousel .card .card-body h2 {
+    font-size: 1.5rem;
     font-weight: 900;
-    margin-bottom: 16px;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
-.card p {
-    font-size: 16px;
+#cardCarousel .card .card-body p {
+    font-size: 1rem;
     color: #747474;
 }
 
+#cardCarousel .card .card-body a {
+    display: table-cell;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 0.75rem;    
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    background-color: #0074D9;
+}
+
+/* CARD CAROUSEL CONTROLS */
 .cardCarousel-controls {
-    margin-top: 24px;
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .cardCarousel-controls a {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 1rem;
+    color: #747474;
+    font-weight: 400;
 }
 
 .cardCarousel-control-prev,
@@ -453,24 +465,33 @@ header {
     display: flex;
     flex-direction: row;
 }
+
 .cardCarousel-control-next-icon {
     display: block;
     order: 2;
 }
 
+.cardCarousel-control-prev-icon i {
+    padding-right: 0.25rem;
+}
+
+.cardCarousel-control-next-icon i {
+    padding-left: 0.25rem;
+}
+
 
 /* FOOTER */
 footer {
-    margin-top: 64px;
+    margin-top: 4rem;
     width: 100%;
     background-color: #fff;
 }
 
-.footer-inner {
+footer .footer-inner {
     display: table;
     text-align: center;
     height: 160px;
-    padding: 16px;
+    padding: 1rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -548,7 +569,7 @@ footer .footer-inner p br {
 
 .profile-title {
     position: absolute;
-    top: 32px;
+    top: 2rem;
     left: 35%;
 }
 
