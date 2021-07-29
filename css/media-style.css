@@ -39,6 +39,8 @@
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
+
+    /* MAIN BANNER */
     #mainBnr .mainBnr-element-left {
         padding: 2rem 1.5rem;
     }
@@ -58,6 +60,8 @@
         display: none;
     }
 
+
+    /* ABOUT BANNER & WORKS BANNER */
     #aboutBnr,
     #worksBnr {
         padding: 2rem 1.25rem;
@@ -72,37 +76,38 @@
         font-size: 0.75rem;
     }
 
-    .cardCarousel {
-        max-height: 420px;
+    /* CARD CAROUSEL SLIDE */
+    #cardCarousel {
+        height: auto;
     }
 
-    .card {
+    #cardCarousel .card {
         width: 210px;
         border-radius: 0.5rem;
         margin-right: 0.5rem;
     }
 
-    .card-image {
+    #cardCarousel .card .card-image {
         width: 210px;
         height: 210px;
     }
 
-    .card-body {
+    #cardCarousel .card .card-body {
         padding: 2rem 0.825rem;
     }
 
-    .card h2  {
+    #cardCarousel .card .card-body h2  {
         font-size: 1.25rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0;
     }
 
-    .card p  {
+    #cardCarousel .card .card-body p  {
         font-size: 0.825rem;
         display: block;
     }
 
-    .card a {
-        font-size: 0.75rem;
+    #cardCarousel .card .card-body a {
+        font-size: 0.825rem;
     }
 
     /* FOOTER */
@@ -110,7 +115,7 @@
         margin-top: 2rem;
     }
 
-    .footer-inner {
+    footer .footer-inner {
         height: 96px;
         padding: 1rem;
         margin-left: auto;
@@ -124,15 +129,16 @@
     footer .footer-inner p br {
         display: block;
     }
+
     footer .footer-inner p span {
         display: none;
     }
-
 
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
 
+    /* MAIN BANNER */
     #mainBnr .mainBnr-element-left {
         padding: 2rem 1.5rem;
     }
@@ -173,11 +179,23 @@
         font-size: 1rem;
     }
 
+    /* FOOTER */
+    footer {
+        margin-top: 2rem;
+    }
+
+    footer .footer-inner {
+        height: 128px;
+    }
+
+    footer .footer-inner p {
+        font-size: 1rem;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
     #mainBnr .mainBnr-element-left {
-        
         padding: 2rem 2rem;
     }
 

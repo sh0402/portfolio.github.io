@@ -294,8 +294,7 @@ header {
 
 #aboutBnr .aboutBnr-title h1 {
     font-size: 2rem;
-
-text-align: center;
+    text-align: center;
     font-weight: 900;
     margin: 0;
 }
@@ -457,7 +456,6 @@ text-align: center;
 .cardCarousel-controls a {
     font-size: 1rem;
     color: #747474;
-    font-weight: 400;
 }
 
 .cardCarousel-control-prev,
