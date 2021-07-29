@@ -66,10 +66,15 @@
     #worksBnr {
         padding: 2rem 1.25rem;
     }
+
+    #aboutBnr .aboutBnr-head h2,
+    #worksBnr .worksBnr-head h2 {
+        font-size: 1.25rem;
+    }
     
     #aboutBnr .aboutBnr-title h1,
     #worksBnr .worksBnr-title h1 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     #aboutBnr .aboutBnr-element {
@@ -159,17 +164,17 @@
     #mainBnr .mainBnr-element-left p br {
         display: block;
     }
-
-    #aboutBnr .aboutBnr-title h1,
-    #worksBnr .worksBnr-title h1 {
-        font-size: 2rem;
-    }
-
+   
     #aboutBnr,
     #worksBnr {
         padding: 3rem 2rem;
     }
 
+    #aboutBnr .aboutBnr-head h2,
+    #worksBnr .worksBnr-head h2 {
+        font-size: 1.25rem;
+    }
+    
     #aboutBnr .aboutBnr-title h1,
     #worksBnr .worksBnr-title h1 {
         font-size: 1.75rem;
@@ -212,6 +217,11 @@
         padding: 2rem 1.5rem;
     }
 
+    #aboutBnr .aboutBnr-head h2,
+    #worksBnr .worksBnr-head h2 {
+        font-size: 1.25rem;
+    }
+    
     #aboutBnr .aboutBnr-title h1,
     #worksBnr .worksBnr-title h1 {
         font-size: 1.5rem;
