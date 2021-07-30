@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+:root {
+    --main-color: #0273d7;
+}
+
 
 *,
 *:before,
@@ -36,14 +40,15 @@ ul, li {
 }
 
 .--main {
-    color: #0074D9;
+    color: var(--main-color);
 }
 
+/* 
 .body-wrapper {
     position: relative;
     width: 100%;
     min-height: 100%;
-}
+} */
 
 .container {
     width: 100%;
@@ -127,7 +132,7 @@ header {
 }
 
 #navbar ul li a {
-    color: #0074D9;
+    color: var(--main-color);;
 }
 
 #navbar .sns {
@@ -137,7 +142,7 @@ header {
 
 #navbar .sns i {
     font-size: 2rem;
-    color: #0074D9;
+    color: var(--main-color);
 }
 
 #navbar .nav-button {
@@ -178,7 +183,7 @@ header {
     min-height: 100vh;
     background-color: #fff;
     z-index: -1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 .nav-open #navbarMenuMo ul {
@@ -200,7 +205,7 @@ header {
 .nav-open #navbarMenuMo ul li a {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #0074D9;
+    color: var(--main-color);
 }
 
 .nav-open .nav-button>.bar1 {
@@ -321,17 +326,17 @@ header {
     margin-bottom: 1rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    background-color: #0074D9;
+    background-color: var(--main-color);
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .25);
 }
 
 #aboutBnr .aboutBnr-element {
     width: 49%;
     font-size: 1rem;
-    color: #0074D9;
+    color: var(--main-color);
     font-weight: bold;
     text-align: center;
-    background-color: #0074d910;
+    background-color: rgba(0, 116, 217, 0.1);
     border-radius: 0.5rem;
     padding: 1rem 0;
     margin: 0;
@@ -447,7 +452,7 @@ header {
     padding: 0.75rem;    
     margin-top: 1rem;
     border-radius: 0.5rem;
-    background-color: #0074D9;
+    background-color: var(--main-color);
 }
 
 /* CARD CAROUSEL CONTROLS */

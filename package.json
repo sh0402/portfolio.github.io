@@ -1,0 +1,25 @@
+{
+  "name": "portfolio.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sh0402/portfolio.github.io.git"
+  },
+  "author": "Desiger_Soot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sh0402/portfolio.github.io/issues"
+  },
+  "homepage": "https://sh0402.github.io/portfolio.github.io",
+  "files": [
+    "dist/",
+    "js/{src,dist}/",
+    "scss/"
+  ]
+  
+}
