@@ -28,14 +28,8 @@
         padding-right: 0;
     }
 
-    #navbarMenuMo {
-        display: none;
-        visibility: hidden;
-    }
+    
 
-    #navbar .sns {
-        display: block;
-    }
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
@@ -200,6 +194,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+
     #mainBnr .mainBnr-element-left {
         padding: 2rem 2rem;
     }
@@ -233,16 +228,17 @@
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
+
     .container {
         padding-right: 1.5rem;
         padding-left: 1.5rem;
     }
+
 }
 
 @media (max-width: 768px) {
-
     
-    header {
+    #navbar .nav-container {
         height: 4rem;
     }
 
@@ -272,13 +268,18 @@
         width: 1.5rem;
     }
 
-    #navbar .logo,
-    #navbar .navbar-nav .nav-item {
-        margin-right: 1.5rem;
-    }
 
     #navbar .nav-button {
-        display: block;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        margin-right: 1rem;
     }
 
     #navbarMenu {

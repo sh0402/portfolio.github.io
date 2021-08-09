@@ -32,93 +32,83 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 
 
+    <script src="/js/main.js" defer></script>
+    
+
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/media-style.css">
-    <script src="./js/main.js" defer></script>
-    <script src="/js/includeHTML.js" defer></script>
+
+   
 </head>
 <body>
-    <header include-html="/static/html/header.html"></header>
-    <!-- <header id="header">
-        <div class="container">
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="navbar">
+
+        <div class="nav-container">
+
+            <div class="logo">
+                <a href="">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="#0074D9"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M28.9474 40H11.0526C4.94737 40 0 35.0526 0 28.9474V11.0526H4.21053C4.21053 14.8421 7.26316 17.8947 11.0526 17.8947H22.1053V28.9474C22.1053 32.7369 25.1579 35.7895 28.9474 35.7895V40ZM4.21053 19.7369V28.9474C4.21053 32.7369 7.26316 35.7895 11.0526 35.7895H20.2632C18.7895 33.8947 17.8947 31.5263 17.8947 28.9474V22.1053H11.0526C8.47368 22.1053 6.10526 21.2105 4.21053 19.7369Z"
+                            fill="#0074D9" />
+                        <path
+                            d="M40 28.9474H35.7895C35.7895 25.1579 32.7368 22.1053 28.9474 22.1053H17.8947V11.0526C17.8947 7.26316 14.8421 4.21053 11.0526 4.21053V0H28.9474C35.0526 0 40 4.94737 40 11.0526V28.9474ZM22.1053 17.8947H28.9474C31.5263 17.8947 33.8947 18.7895 35.7895 20.2632V11.0526C35.7895 7.26316 32.7368 4.21053 28.9474 4.21053H19.7368C21.2105 6.10526 22.1053 8.47368 22.1053 11.0526V17.8947Z"
+                            fill="#0074D9" />
+                        <path
+                            d="M28.9474 40C22.8421 40 17.8947 35.0526 17.8947 28.9474V17.8947H28.9474C35.0526 17.8947 40 22.8421 40 28.9474C40 35.0526 35.0526 40 28.9474 40ZM22.1053 22.1053V28.9474C22.1053 32.7369 25.1579 35.7895 28.9474 35.7895C32.7369 35.7895 35.7895 32.7369 35.7895 28.9474C35.7895 25.1579 32.7369 22.1053 28.9474 22.1053H22.1053Z"
+                            fill="#0074D9" />
+                        <path
+                            d="M22.1053 22.1053H11.0526C4.94737 22.1053 0 17.1579 0 11.0526C0 4.94737 4.94737 0 11.0526 0C17.1579 0 22.1053 4.94737 22.1053 11.0526V22.1053ZM11.0526 4.21053C7.26316 4.21053 4.21053 7.26316 4.21053 11.0526C4.21053 14.8421 7.26316 17.8947 11.0526 17.8947H17.8947V11.0526C17.8947 7.26316 14.8421 4.21053 11.0526 4.21053Z"
+                            fill="#0074D9" />
+                        <path
+                            d="M11.0526 31.0526C9.89474 31.0526 8.94737 30.1053 8.94737 28.9474V11.0526C8.94737 9.89473 9.89474 8.94736 11.0526 8.94736C12.2105 8.94736 13.1579 9.89473 13.1579 11.0526V28.9474C13.1579 30.1053 12.2105 31.0526 11.0526 31.0526Z"
+                            fill="#0074D9" />
+                        <path
+                            d="M28.9474 31.0526C27.7895 31.0526 26.8421 30.1053 26.8421 28.9474V11.0526C26.8421 9.89473 27.7895 8.94736 28.9474 8.94736C30.1053 8.94736 31.0526 9.89473 31.0526 11.0526V28.9474C31.0526 30.1053 30.1053 31.0526 28.9474 31.0526Z"
+                            fill="#0074D9" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="nav-button">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+            </div>
             
-            <nav id="navbar" class="navbar">
+            <div id="navbarMenu" class="navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
 
-                <div class="logo">
-                    <a href="">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="#0074D9"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M28.9474 40H11.0526C4.94737 40 0 35.0526 0 28.9474V11.0526H4.21053C4.21053 14.8421 7.26316 17.8947 11.0526 17.8947H22.1053V28.9474C22.1053 32.7369 25.1579 35.7895 28.9474 35.7895V40ZM4.21053 19.7369V28.9474C4.21053 32.7369 7.26316 35.7895 11.0526 35.7895H20.2632C18.7895 33.8947 17.8947 31.5263 17.8947 28.9474V22.1053H11.0526C8.47368 22.1053 6.10526 21.2105 4.21053 19.7369Z"
-                                fill="#0074D9" />
-                            <path
-                                d="M40 28.9474H35.7895C35.7895 25.1579 32.7368 22.1053 28.9474 22.1053H17.8947V11.0526C17.8947 7.26316 14.8421 4.21053 11.0526 4.21053V0H28.9474C35.0526 0 40 4.94737 40 11.0526V28.9474ZM22.1053 17.8947H28.9474C31.5263 17.8947 33.8947 18.7895 35.7895 20.2632V11.0526C35.7895 7.26316 32.7368 4.21053 28.9474 4.21053H19.7368C21.2105 6.10526 22.1053 8.47368 22.1053 11.0526V17.8947Z"
-                                fill="#0074D9" />
-                            <path
-                                d="M28.9474 40C22.8421 40 17.8947 35.0526 17.8947 28.9474V17.8947H28.9474C35.0526 17.8947 40 22.8421 40 28.9474C40 35.0526 35.0526 40 28.9474 40ZM22.1053 22.1053V28.9474C22.1053 32.7369 25.1579 35.7895 28.9474 35.7895C32.7369 35.7895 35.7895 32.7369 35.7895 28.9474C35.7895 25.1579 32.7369 22.1053 28.9474 22.1053H22.1053Z"
-                                fill="#0074D9" />
-                            <path
-                                d="M22.1053 22.1053H11.0526C4.94737 22.1053 0 17.1579 0 11.0526C0 4.94737 4.94737 0 11.0526 0C17.1579 0 22.1053 4.94737 22.1053 11.0526V22.1053ZM11.0526 4.21053C7.26316 4.21053 4.21053 7.26316 4.21053 11.0526C4.21053 14.8421 7.26316 17.8947 11.0526 17.8947H17.8947V11.0526C17.8947 7.26316 14.8421 4.21053 11.0526 4.21053Z"
-                                fill="#0074D9" />
-                            <path
-                                d="M11.0526 31.0526C9.89474 31.0526 8.94737 30.1053 8.94737 28.9474V11.0526C8.94737 9.89473 9.89474 8.94736 11.0526 8.94736C12.2105 8.94736 13.1579 9.89473 13.1579 11.0526V28.9474C13.1579 30.1053 12.2105 31.0526 11.0526 31.0526Z"
-                                fill="#0074D9" />
-                            <path
-                                d="M28.9474 31.0526C27.7895 31.0526 26.8421 30.1053 26.8421 28.9474V11.0526C26.8421 9.89473 27.7895 8.94736 28.9474 8.94736C30.1053 8.94736 31.0526 9.89473 31.0526 11.0526V28.9474C31.0526 30.1053 30.1053 31.0526 28.9474 31.0526Z"
-                                fill="#0074D9" />
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="nav-button">
-                    <span class="bar bar1"></span>
-                    <span class="bar bar2"></span>
-                    <span class="bar bar3"></span>
-                </div>
-                
-                <div class="sns">
-                    <a href="https://www.instagram.com/daily_soot" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-
-                <div id="navbarMenu">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </nav>
+            <div class="sns">
+                <a href="https://www.instagram.com/daily_soot" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
 
         </div>
 
-        <div id="navbarMenuMo">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Work</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </div>
+    </nav>
 
-    </header> -->
-
+    <!-- MAIN -->
     <article>
+
         <div class="container">
+
             <section id="mainBnr">
                 <div class="mainBnr-element-left">
                     <h1>Products & Brand<br>
@@ -136,6 +126,7 @@
                 </div>
                 <div class="mainBnr-element-right"></div>
             </section>
+
             <section>
                 <div class="row">
                     <div id="aboutBnr" class="col-md-5">
@@ -256,52 +247,17 @@
             </section>
         
         </div>
+
     </article>
-    
-    <!-- <div class="container">
-        <div class="row">
-
-            <section class="col-md-8">
-
-                <div class="profile-container">
-                    <div class="profile-thumb"></div>
-                    <div class="profile-topBg"></div>
-                    <div class="profile-bottomBg">
-                        <div class="profile-title">
-                            <h1>Kim Soo Hwan</h1>
-                            <p>Designer</p>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <aside class="col-md-4">
-                <div class="myInfo-container">
-                    <h2>My Infomation</h2>
-                    <ul>
-                        <li>
-                            <p>Email</p>
-                            <p>a_co89@naver.com</p>
-                        </li>
-                    </ul>
-                </div>
-            </aside>
-
-        </div>
-    </div> -->
-    
+      
+    <!-- FOOTER -->
     <footer>
         <div class="footer-inner">
             <p>Copyright ©2021 All tight reserved <br><span>|</span> make by Designer Soot</p>
         </div>
     </footer>
-    <!-- body-wrapper -->
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <script>
-        includeHTML();
-    </script>
+    
 </body>
 </html>

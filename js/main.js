@@ -11,11 +11,11 @@ const cardCarouselPrev = document.querySelector('.cardCarousel-control-prev');
 const cardCarousel = document.querySelector('.cardCarousel');
 
 cardCarouselPrev.addEventListener('click', () => {
-    cardCarousel.scrollLeft -= 150
+    cardCarousel.scrollLeft -= 100
 });
 
 cardCarouselNext.addEventListener('click', () => {
-    cardCarousel.scrollLeft += 150
+    cardCarousel.scrollLeft += 100
 });
 
 
