@@ -1,35 +1,12 @@
 
 
-
-
-
-
-
-
-
-
-
-aside .container {
-    width: 100%;
-    max-width: 1200px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-
-
-
 /* SECTION */
-.profile-container {
+#profile, #overview {
     position: relative;
     width: 100%;
-    height: 400px;
     margin-right: auto;
-    border-radius: 16px;
+    border-radius: 1rem;
+    background-color: #fff;
     background-clip: border-box;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .25);
 }
@@ -50,8 +27,8 @@ aside .container {
     width: 100%;
     height: 200px;
     background-color: #666;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     background: url(https://images.unsplash.com/photo-1432251407527-504a6b4174a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);
     background-position: center;
     background-repeat: no-repeat;
@@ -63,14 +40,14 @@ aside .container {
     width: 100%;
     height: 200px;
     background-color: #fff;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 .profile-title {
     position: absolute;
     top: 2rem;
-    left: 35%;
+    left: 40%;
 }
 
 .profile-title h1 {
@@ -78,33 +55,70 @@ aside .container {
     margin: 0;
 }
 
+#overview {
+    padding: 2rem;
+}
+
 /* ASIDE */
 aside {
-    width: 100%;
-    height: 400px;
-    background-color: #fff;
     margin-left: auto;
-    border-radius: 16px;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .25);
-}
-
-.myInfo-container ul {
-    position: relative;
-    padding: 16px;
-}
-
-.myInfo-container li {
-    display: flex;
-    flex-direction: column;
+    /* width: 100%;
+    height: auto;
+    background-color: #fff;
     
+    border-radius: 1rem;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .25); */
 }
 
-.myInfo-container li::before {
+#myInfo {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .25);
+    padding: 2rem;
+}
+
+.box-2 {
+    margin-top: 2rem;
+}
+
+#myInfo h2 {
+    margin-bottom: 2rem;
+}
+
+#myInfo ul {
+    position: relative;
+    padding-inline-start: 0;
+}
+
+#myInfo ul li {
+    padding: 0.5rem 2.5rem;
+}
+
+#myInfo ul li::after {
     content: "";
-    display: block;
-    float: left;
-    left: 16px;
-    width: 24px;
-    height: 24px;
-    background-color: blue;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 0.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #0273d7;
+}
+
+#myInfo ul li p {
+    margin-block-start: 0.25rem;
+    margin-block-end: 0.25rem;
+}
+
+#myInfo ul li .myInfo-list-title {
+    color: #747474;
+    font-weight: 600;
+}
+
+#myInfo ul li .myInfo-list-text {
+    color: #0273d7;
+    font-weight: 600;
 }
