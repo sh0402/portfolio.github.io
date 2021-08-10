@@ -1,7 +1,9 @@
 
 
 /* SECTION */
-#profile, #overview {
+#profile,
+#overview,
+#carrier {
     position: relative;
     width: 100%;
     margin-right: auto;
@@ -55,8 +57,55 @@
     margin: 0;
 }
 
-#overview {
+#overview,
+#carrier {
     padding: 2rem;
+}
+
+#overview h2,
+#carrier h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#carrier .education {
+    margin-bottom: 4rem;
+}
+
+#overview .overview-inner,
+#carrier .education-inner,
+#carrier .experience-inner {
+    padding: 2rem;
+    background-color: #F1F3F4;
+    border-radius: 1rem;
+}
+
+#overview .overview-inner p {
+    font-size: 1.25rem;
+    margin-block-start: 0;
+    margin-block-end: 1rem;
+}
+
+#overview .overview-inner p:last-child {
+    margin-block-end: 0;
+}
+
+#carrier .education-inner > div {
+    margin-bottom: 1.5rem;
+}
+
+#carrier .education-inner > div:last-child {
+    margin-bottom: 0;
+}
+
+#carrier .education-inner h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+#carrier .education-inner p {
+    font-size: 1.25rem;
+    margin: 0;
 }
 
 /* ASIDE */
