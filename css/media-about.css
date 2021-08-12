@@ -1,7 +1,7 @@
 
 @media (min-width: 768px) {
     #asideCarousel {
-        display: none;
+        display: block;
     }
 }
 
@@ -118,43 +118,13 @@
 }
 
 @media (max-width: 768.02px) {
+    main {
+        position: relative;
+    }
+
     aside {
         display: none;
     }
 
-    #asideCarousel {
-        display: block;
-        margin-top: 2rem;
-    }
-
-    .carousel-wrap {
-        max-width: 1200px;
-        position: relative;
-        margin: auto;
-    }
-
-    .carousel-inner {
-        width: 100%;
-    }
-
-    .carousel-item {
-        display: none;
-    }
-    
-    #asideCarousel.active {
-        cursor: grabbing;
-        cursor: -webkit-grabbing;
-    }
-
-    .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-      }
 
 }
