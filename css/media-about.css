@@ -1,9 +1,4 @@
 
-@media (min-width: 768px) {
-    #asideCarousel {
-        display: block;
-    }
-}
 
 @media (max-width: 992px) {
     .profile-thumb {
@@ -94,15 +89,8 @@
     }
 
     #myInfo ul li::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        border-radius: 0.25rem;
         width: 1.25rem;
         height: 1.25rem;
-        border: 2px solid #0074D9;
     }
     
     #myInfo ul li p {
@@ -117,14 +105,9 @@
     
 }
 
-@media (max-width: 768.02px) {
-    main {
-        position: relative;
-    }
 
-    aside {
-        display: none;
-    }
-
+@media (min-width: 320px) and (max-width: 768px) {
+   
+    
 
 }

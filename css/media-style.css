@@ -257,8 +257,12 @@
 
 
 @media (max-width: 768px) {
-
+    .row {
+        flex-direction: column
+    }
+    
     main {
+        width: 100%;
         max-width: 576px;
         padding-right: 1rem;
         padding-left: 1rem;
