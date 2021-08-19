@@ -1,12 +1,4 @@
-/* 
-@media (min-width: 992px) {
-    .col-md-4 {
-        flex: 0 0 32%;
-        max-width: 32%;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
+@media (min-width: 768.02px) {
     .col-md-5 {
         flex: 0 0 38.6666666667%;
         max-width: 38.6666666667%;
@@ -20,31 +12,10 @@
         padding-left: 0;
         padding-right: 0;
     }
-
-    .col-md-8 {
-        flex: 0 0 65.3333333333%;
-        max-width: 65.3333333333%;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-} */
-@media (min-width: 768.02px) and (max-width: 1200px) {
-    .col-md-5 {
-        -ms-flex: 0 0 41.666667%;
-        flex: 0 0 41.666667%;
-        max-width: 41.666667%;
-        padding-inline-start: 2rem;
-    }
-
-    .col-md-7 {
-        -ms-flex: 0 0 58.333333%;
-        flex: 0 0 58.333333%;
-        max-width: 58.333333%;
-    }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
+
     .col-lg-4 {
         flex: 0 0 32%;
         max-width: 32%;
@@ -60,25 +31,25 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 576px) {
+@media (min-width: 320px) {
 
     /* MAIN BANNER */
     #mainBnr .mainBnr-element-left {
         padding: 2rem 1.5rem;
     }
 
-    #mainBnr .mainBnr-element-left h1 {
+    #mainBnr h1 {
         font-size: 1.5rem;
         text-align: center;
     }
 
-    #mainBnr .mainBnr-element-left p {
+    #mainBnr p {
         font-size: 1rem;
         line-height: 1.2;
         text-align: center;
     }
 
-    #mainBnr .mainBnr-element-left p br {
+    #mainBnr p br {
         display: none;
     }
 
@@ -103,8 +74,35 @@
         font-size: 0.75rem;
     }
 
-    /* CARD CAROUSEL SLIDE */
-    #cardCarousel {
+    /* FOOTER */
+    footer {
+        margin-top: 2rem;
+    }
+
+    footer .footer-inner {
+        height: 96px;
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer .footer-inner p {
+        font-size: 0.75rem;
+    }
+
+    footer .footer-inner p br {
+        display: block;
+    }
+
+    footer .footer-inner p span {
+        display: none;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+     /* CARD CAROUSEL SLIDE */
+     #cardCarousel {
         height: auto;
     }
 
@@ -136,34 +134,9 @@
     #cardCarousel .card .card-body a {
         font-size: 0.825rem;
     }
-
-    /* FOOTER */
-    footer {
-        margin-top: 2rem;
-    }
-
-    footer .footer-inner {
-        height: 96px;
-        padding: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    footer .footer-inner p {
-        font-size: 0.75rem;
-    }
-
-    footer .footer-inner p br {
-        display: block;
-    }
-
-    footer .footer-inner p span {
-        display: none;
-    }
-
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) {
 
     /* MAIN BANNER */
     #mainBnr .mainBnr-element-left {
@@ -221,7 +194,7 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) {
 
     #mainBnr .mainBnr-element-left {
         padding: 2rem 2rem;
@@ -316,5 +289,9 @@
 
     #navbar .sns {
         display: none;
+    }
+
+    #aboutBnr {
+        margin-bottom: 2rem;
     }
 }

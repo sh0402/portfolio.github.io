@@ -131,11 +131,13 @@
         font-size: 0.825rem;
     }
 
-    #carrier .education-element,
-    #carrier .experience-element-title {
+    #carrier .education-element:not(:last-child) {
         margin-bottom: 1rem;
     }
 
+    #carrier .experience-element-title {
+        margin-bottom: 1rem;
+    }
     
     #myInfo h2,
     #skills h2 {

@@ -52,13 +52,3 @@ function showSlides(n) {
 const obj1 = document.getElementById('myInfo').style.height = "360px"; 
 const obj2 = document.getElementById('skills').style.height = "360px";
 const obj3 = document.getElementById('hobbies').style.height = "360px";
-
-const obj1_height = obj1.offsetHeight;
-const obj2_height = obj2.offsetHeight;
-const obj3_height = obj3.offsetHeight;
-
-if (obj1_height > obj2_height) {
-    obj2.style.height = obj1_height + 'px';
-} else {
-    obj1.style.height = obj2_height + 'px';
-}
