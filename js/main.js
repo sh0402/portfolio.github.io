@@ -1,9 +1,9 @@
 
-// const toggleBtn = document.querySelector('.nav-button');
+const toggleBtn = document.querySelector('.nav-button');
 
-// toggleBtn.addEventListener('click', () => {
-//     document.body.classList.toggle('nav-open');
-// });
+toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+});
 
 
 // const cardCarouselNext = document.querySelector('.cardCarousel-control-next');
@@ -29,9 +29,13 @@
 //     $('.cardCarousel').scrollLeft(_scrollX - 150);
 // };
 
-
-function cardCarousel (container) {
-    const slider = container.querySeletor('');
-}
-
-cardCarousel (document.querySelector('.cardCarousel'));
+const swiper = new Swiper(".mySwiper", {
+    autoHeight: true,
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    centeredSlides: false,
+});

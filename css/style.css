@@ -384,6 +384,7 @@ main {
 
 /* WORKS BANNER */
 #worksBnr {
+    position: relative;
     width: 100%;
     margin-left: auto;
     border-radius: 1rem;
@@ -489,7 +490,7 @@ main {
     flex-wrap: wrap;
 }
 
-#cardCarousel .carousel-inner {
+#cardCarousel .swiper-wrapper {
     display: flex;
     flex: 1 1 500px;
     margin: 0;
@@ -537,6 +538,17 @@ main {
     margin-top: 1rem;
     border-radius: 0.5rem;
     background-color: var(--main-color);
+}
+
+.swiper-pagination {
+    width: 100%;
+    bottom: 2rem;
+}
+
+.swiper-pagination-bullet {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-inline-start: 0.5rem;
 }
 
 
