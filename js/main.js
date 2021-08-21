@@ -6,36 +6,17 @@ toggleBtn.addEventListener('click', () => {
 });
 
 
-// const cardCarouselNext = document.querySelector('.cardCarousel-control-next');
-// const cardCarouselPrev = document.querySelector('.cardCarousel-control-prev');
-// const cardCarousel = document.querySelector('.cardCarousel');
-
-// cardCarouselPrev.addEventListener('click', () => {
-//     cardCarousel.scrollLeft -= 100
-// });
-
-// cardCarouselNext.addEventListener('click', () => {
-//     cardCarousel.scrollLeft += 100
-// });
-
-
-// controlNextBtn = function() {
-//     var _scrollX = $('.cardCarousel').scrollLeft();
-//     $('.cardCarousel').scrollLeft(_scrollX + 150);
-// };
-
-// controlPrevBtn = function() {
-//     var _scrollX = $('.cardCarousel').scrollLeft();
-//     $('.cardCarousel').scrollLeft(_scrollX - 150);
-// };
-
 const swiper = new Swiper(".mySwiper", {
-    autoHeight: true,
-    slidesPerView: "auto",
+    slidesPerView: 2,
     spaceBetween: 20,
+    grabCursor: true,
+    loop: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
-    centeredSlides: false,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 });
