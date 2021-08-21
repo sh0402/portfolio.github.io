@@ -19,4 +19,23 @@ const swiper = new Swiper(".mySwiper", {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 10
+        },
+
+        480: {
+            slidesPerView: 1.5,
+            spaceBetween: 10
+        },
+
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 10
+        },
+    }
+    
 });

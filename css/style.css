@@ -43,8 +43,9 @@ ul, li {
     padding-inline-start: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
+    padding: 0;
 }
 
 .--main {
@@ -224,7 +225,6 @@ main {
 
 
 /* MAIN BANNER */
-
 .setting-btn {
     display: flex;
     flex-direction: column;
@@ -249,6 +249,7 @@ main {
     position: relative;
     width: 100%;
     height: 600px;
+    --height: 600px;
     border-radius: 1rem;
     background-color: #fff;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .25);
@@ -267,6 +268,7 @@ main {
 #mainBnr h1 {
     font-size: 3rem;
     font-weight: 900;
+    margin-bottom: 2rem;
 }
 
 #mainBnr p {
@@ -274,16 +276,14 @@ main {
     font-size: 1.25rem;
 }
 
-#mainBnr p {
-    margin-block-start: 1em;
-    margin-block-end:0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+#mainBnr p:not(:last-child) {
+    margin-bottom: 2rem;
 }
 
 #mainBnr .mainBnr-element-right {
     width: 45%;
-    height: 100%;
+    height: 0;
+    padding-top: calc(var(--height)*1);
     margin-left: auto;
     background: url(https://images.unsplash.com/photo-1432251407527-504a6b4174a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);
     background-position: center;
@@ -292,12 +292,27 @@ main {
     border-radius: 0 1rem 1rem 0;
 }
 
-/* section .row {
-    justify-content: space-between;
-    margin-top: 2rem;
-} */
 
-/* ABOUT BANNER */
+/* ARTICLE - ABOUT BANNER & WORKS BANNER */
+#aboutBnr h1,
+#worksBnr h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+#aboutBnr h2,
+#worksBnr h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+#aboutBnr .aboutBnr-head,
+#worksBnr .worksBnr-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
 
 #aboutBnr {
     width: 100%;
@@ -308,17 +323,18 @@ main {
     padding: 2rem;
 }
 
-#aboutBnr .aboutBnr-head {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
+#aboutBnr h3 {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--main-color);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .25);
 }
 
-#aboutBnr .aboutBnr-head h2 {
-    font-size: 1.5rem;
-    font-weight: 900;
-    margin: 0;
-}
 
 #aboutBnr .aboutBnr-thumb {
     display: flex;
@@ -332,17 +348,6 @@ main {
     margin-bottom: 2rem;
 }
 
-#aboutBnr .aboutBnr-title {
-    margin-bottom: 2rem;
-}
-
-#aboutBnr .aboutBnr-title h1 {
-    font-size: 2rem;
-    text-align: center;
-    font-weight: 900;
-    margin: 0;
-}
-
 #aboutBnr .aboutBnr-item {
     display: flex;
     flex-wrap: wrap;
@@ -350,18 +355,6 @@ main {
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-}
-
-#aboutBnr .aboutBnr-item-title h3 {
-    color: #fff;
-    font-size: 1.25rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    background-color: var(--main-color);
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .25);
 }
 
 #aboutBnr .aboutBnr-element {
@@ -381,7 +374,6 @@ main {
     margin-right: 0;
 }
 
-
 /* WORKS BANNER */
 #worksBnr {
     position: relative;
@@ -393,32 +385,12 @@ main {
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .25);
 }
 
-#worksBnr .worksBnr-head {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-}
-
-#worksBnr .worksBnr-head h2 {
-    font-size: 1.5rem;
-    font-weight: 900;
-    margin: 0;
-}
-
 #worksBnr .worksBnr-title {
     text-align: left;
     margin-bottom: 1rem;
 }
 
-#worksBnr .worksBnr-title h1 {
-    font-size: 2rem;
-    font-weight: 900;
-    margin: 0;
-}
-
 /* CARD CAROUSEL SLIDE */
-
-
 .swiper-container {
     width: 100%;
     height: auto;
@@ -451,7 +423,8 @@ main {
 
 #cardCarousel .card .card-image {
     width: 100%;
-    height: 270px;
+    height: 0;
+    padding-top: calc(100% / 10 * 9);
     background-color: blue;
     border-radius: 0.5rem 0.5rem 0 0;
 }
@@ -470,6 +443,7 @@ main {
 #cardCarousel .card .card-body p {
     font-size: 1rem;
     color: #747474;
+    margin-block-end: 1rem;
 }
 
 #cardCarousel .card .card-body a {
@@ -477,17 +451,15 @@ main {
     font-size: 1rem;
     font-weight: 600;
     color: #fff;
-    padding: 0.75rem;    
-    margin-top: 1rem;
+    padding: 0.75rem;
     border-radius: 0.5rem;
     background-color: var(--main-color);
 }
 
-
 .swiper-pagination {
     left: 50%;
     transform: translateX(-50%);
-    bottom: 2rem;
+    bottom: 0.625rem;
 }
 
 .swiper-pagination-bullet {
