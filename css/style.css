@@ -159,6 +159,7 @@ main {
     display: none;
     cursor: pointer;
     z-index: 1040;
+    padding: 1rem;
 }
 
 #navbar .nav-button .bar {
@@ -456,10 +457,15 @@ main {
     background-color: var(--main-color);
 }
 
+
+
+
+/* CARD CAROUSEL CONTROLS */
+
 .swiper-pagination {
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0.625rem;
+    bottom: 2rem;
 }
 
 .swiper-pagination-bullet {
@@ -467,9 +473,6 @@ main {
     height: 0.75rem;
     margin-inline-start: 0.5rem;
 }
-
-
-/* CARD CAROUSEL CONTROLS */
 
 .swiper-button-prev,
 .swiper-button-next {
@@ -480,12 +483,12 @@ main {
 }
 
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-    left: 1.5rem;
+    left: 2rem;
     right: auto;
 }
 
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-    right: 1.5rem;
+    right: 2rem;
     left: auto;
 }
 

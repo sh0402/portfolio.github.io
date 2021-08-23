@@ -1,0 +1,165 @@
+@media (min-width: 768.02px) {
+
+    .slideshow-container {
+        display: none;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .profile-thumb {
+        top: 40%;
+        left: 50%;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .profile-topBg {
+        width: 100%;
+        height: 200px;
+        background-color: #666;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        background: none;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .profile-bottomBg {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        background-color: #fff;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        padding: 1rem;
+    }
+
+    .profile-title {
+        text-align: center;
+        padding-top: 4rem;
+        padding-left: 0;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    .profile-title h1 {
+        font-size: 1.75rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    #overview,
+    #carrier {
+        padding: 2rem 1.5rem;
+    }
+
+    #overview h2,
+    #carrier h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    #overview .overview-inner,
+    #carrier .education-inner,
+    #carrier .experience-inner {
+        padding: 2rem 1.5rem;
+    }
+
+    #overview .overview-inner p {
+        font-size: 1rem;
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+    
+    aside {
+        display: none;
+    }
+    
+    .profile-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .profile-title p {
+        font-size: 1rem;
+    }
+
+    #overview,
+    #carrier {
+        padding: 2rem 1.5rem;
+    }
+
+    #overview h2,
+    #carrier h2 {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #carrier .education {
+        margin-bottom: 2rem;
+    }
+
+    #overview .overview-inner,
+    #carrier .education-inner,
+    #carrier .experience-inner {
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    #overview .overview-inner p {
+        font-size: 0.825rem;
+    }
+
+    #carrier .experience-inner:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+
+    #carrier .education-inner h3,
+    #carrier .experience-inner h3 {
+        font-size: 1rem;
+    }
+
+    #carrier .education-inner p,
+    #carrier .experience-inner p {
+        font-size: 0.825rem;
+    }
+
+    #carrier .education-element:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    #carrier .experience-element-title {
+        margin-bottom: 1rem;
+    }
+    
+    #myInfo h2,
+    #skills h2 {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #myInfo .myInfo-element p {
+        font-size: 0.825rem;
+    }
+
+    #skills button {
+        font-size: 0.75rem;
+        border-radius: 0.25rem;
+        padding: 0.5rem 0.75rem;
+        margin-block-start: 0.25rem;
+        margin-block-end: 0.25rem;
+        margin-inline-end: 0.25rem;
+    }
+
+    .dot-indicators {
+        bottom: 1rem;
+    }
+
+}

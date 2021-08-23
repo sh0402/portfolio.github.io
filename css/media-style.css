@@ -14,7 +14,7 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
 
     .col-lg-4 {
         flex: 0 0 32%;
@@ -32,6 +32,47 @@
 }
 
 @media (max-width: 768px) {
+
+    main {
+        width: 100%;
+        max-width: 640px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin-top: 8rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #navbar {
+        height: 80px;
+    }
+
+    #navbar .logo {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+    }
+
+    #navbar .nav-button {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        margin-right: 1rem;
+    }
+
+    #navbarMenu {
+        visibility: hidden;
+    }
+
+    #navbar .sns {
+        display: none;
+    }
 
     /* MAIN BANNER */
     #mainBnr {
@@ -71,6 +112,11 @@
         margin-bottom: 0;
     }
 
+    .swiper-button-prev,
+    .swiper-button-next {
+       display: none;
+    }
+
     /* FOOTER */
     footer {
         margin-top: 2rem;
@@ -97,7 +143,15 @@
 
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 375px) {
+
+    #navbar .logo {
+        margin-left: 0;
+    }
+
+    #navbar .nav-button {
+        margin-right:0;
+    }
 
     #mainBnr .mainBnr-element-right {
         padding-top: calc(var(--height)/2.5);
@@ -143,6 +197,10 @@
         font-size: 1rem;
     }
 
+    #worksBnr h1 br {
+        display: none;
+    }
+
 
     #cardCarousel .card .card-body {
         padding: 1.5rem 1rem;
@@ -168,5 +226,158 @@
         height: 0.625rem;
         margin-inline-start: 0.5rem;
     }
+
+    .swiper-pagination {
+        bottom: 0.5rem;
+    }
     
+}
+
+
+@media (min-width: 375.02px) and (max-width: 480px) {
+
+    #mainBnr .mainBnr-element-right {
+        padding-top: calc(var(--height)/2);
+    }
+
+    #mainBnr .mainBnr-element-left {
+        padding: 2rem 1.5rem;
+    }
+
+    #mainBnr h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    #aboutBnr h1,
+    #worksBnr h1 {
+        font-size: 2rem;
+    }
+
+    #aboutBnr h2,
+    #worksBnr h2 {
+        font-size: 1.5rem;
+    }
+
+    #aboutBnr .aboutBnr-thumb {
+        width: 200px;
+        height: 200px;
+    }
+
+    #aboutBnr .aboutBnr-element {
+        font-size: 1rem;
+        padding: 0.75rem 0;
+    }
+
+    #aboutBnr h3 {
+        font-size: 1.5rem;
+        padding: 0.825rem;
+    }
+
+
+    #cardCarousel .card .card-body {
+        padding: 1.5rem 1.5rem;
+    }
+
+    .swiper-pagination {
+        bottom: 0.5rem;
+    }
+    
+}
+
+@media (min-width: 480.02px) and (max-width: 768px) {
+    #mainBnr .mainBnr-element-right {
+        padding-top: calc(var(--height)/1.5);
+    }
+
+    #mainBnr .mainBnr-element-left {
+        padding: 4rem 2rem;
+    }
+
+    #mainBnr h1 {
+        font-size: 2.75rem;
+        text-align: left;
+    }
+
+    #mainBnr p {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        text-align: left;
+    }
+    
+    #aboutBnr,
+    #worksBnr {
+        padding: 4rem 2rem;
+    }
+
+    #aboutBnr h1,
+    #worksBnr h1 {
+        font-size: 2.75rem;
+    }
+
+    #aboutBnr h2,
+    #worksBnr h2 {
+        font-size: 2rem;
+    }
+
+    #aboutBnr h3 {
+        font-size: 1.75rem;
+        padding: 0.825rem;
+    }
+
+    #aboutBnr .aboutBnr-thumb {
+        width: 280px;
+        height: 280px;
+    }
+
+    #aboutBnr .aboutBnr-element {
+        font-size: 1.25rem;
+        padding: 1rem 0;
+    }
+
+    #worksBnr h1 br {
+        display: none;
+    }
+
+
+    .swiper-pagination {
+        bottom: 1rem;
+    }
+}
+
+@media (min-width: 768.02px) and (max-width: 992px) {
+    #mainBnr h1 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    #aboutBnr h1,
+    #worksBnr h1 {
+        font-size: 1.825rem;
+    }
+
+    #aboutBnr h2,
+    #worksBnr h2 {
+        font-size: 1.25rem;
+    }
+
+    #aboutBnr .aboutBnr-thumb {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+        left: 2rem;
+        right: auto;
+    }
+    
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+        right: 2rem;
+        left: auto;
+    }
+
+    .swiper-pagination {
+        bottom: 2rem;
+    }
 }
