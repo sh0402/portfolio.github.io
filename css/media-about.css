@@ -1,4 +1,8 @@
 @media (max-width: 768px) {
+    #profile {
+        padding: 2rem 1.25rem;
+        margin-bottom: 2rem;
+    }
 
     .profile-thumb {
         top: 40%;
