@@ -49,6 +49,6 @@ function showSlides(n) {
 // });
 
 
-const obj1 = document.getElementById('myInfo').style.height = "360px"; 
-const obj2 = document.getElementById('skills').style.height = "360px";
-const obj3 = document.getElementById('hobbies').style.height = "360px";
+const obj1 = document.getElementById('myInfo').style.height = "400px"; 
+const obj2 = document.getElementById('skills').style.height = "400px";
+const obj3 = document.getElementById('hobbies').style.height = "400px";

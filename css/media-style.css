@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 768.02px) {
     .col-md-5 {
         flex: 0 0 38.6666666667%;
         max-width: 38.6666666667%;
@@ -100,16 +100,11 @@
         display: none;
     }
 
-
     /* ABOUT BANNER & WORKS BANNER */
     #aboutBnr,
     #worksBnr {
         padding: 2rem 1.25rem;
         margin-bottom: 2rem;
-    }
-
-    #aboutBnr .aboutBnr-title {
-        margin-bottom: 0;
     }
 
     .swiper-button-prev,
@@ -160,17 +155,23 @@
     #mainBnr h1 {
         font-size: 1.5rem;
         text-align: left;
+        margin-bottom: 1rem;
     }
     
     #mainBnr p {
         font-size: 1rem;
-        line-height: 1.2;
+        line-height: 1.4;
         text-align: left;
+    }
+
+    #mainBnr p:not(:last-child) {
+        margin-bottom: 1rem;
     }
 
     #aboutBnr h1,
     #worksBnr h1 {
         font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     #aboutBnr h2,
@@ -232,7 +233,6 @@
     }
     
 }
-
 
 @media (min-width: 375.02px) and (max-width: 480px) {
 

@@ -17,7 +17,19 @@
     margin-bottom: 2rem;
 }
 
-.profile-thumb {
+#profile h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+#profile p {
+    font-size: 1.5rem;
+    color: #747474;
+    margin: 0;       
+}
+
+#profile .profile-thumb {
     position: absolute;
     left: 2rem;
     width: 200px;
@@ -29,7 +41,7 @@
     z-index: 99;
 }
 
-.profile-topBg {
+#profile .profile-topBg {
     width: 100%;
     height: 200px;
     background-color: #666;
@@ -51,21 +63,11 @@
     padding: 2rem;
 }
 
-.profile-title {
-    padding-left: 14rem;
+#profile .profile-title {
+    margin-left: 14rem;
 }
 
-.profile-title h1 {
-    font-size: 2rem;
-    font-weight: 900;
-    margin: 0;
-}
 
-.profile-title p {
-    font-size: 1.5rem;
-    color: #747474;
-    margin: 0;       
-}
 
 #overview,
 #carrier {
@@ -79,10 +81,6 @@
     margin-bottom: 2rem;
 }
 
-#carrier .education {
-    margin-bottom: 4rem;
-}
-
 #overview .overview-inner,
 #carrier .education-inner,
 #carrier .experience-inner {
@@ -91,7 +89,11 @@
     border-radius: 1rem;
 }
 
-#overview .overview-inner p {
+#carrier .education {
+    margin-bottom: 4rem;
+}
+
+#overview p {
     font-size: 1.25rem;
     color: #747474;
     line-height: 1.5;
@@ -99,7 +101,7 @@
     margin-block-end: 1rem;
 }
 
-#overview .overview-inner p:last-child {
+#overview p:last-child {
     margin-block-end: 0;
 }
 
@@ -107,8 +109,7 @@
     margin-bottom: 1.5rem;
 }
 
-#carrier .education-inner h3,
-#carrier .experience-inner h3 {
+#carrier h3 {
     font-size: 1.25rem;
     color: #555;
     margin-bottom: 0.5rem;
@@ -118,8 +119,11 @@
     margin-bottom: 2rem;
 }
 
-#carrier .education-inner p,
-#carrier .experience-inner p {
+#carrier .experience-element-title {
+    margin-bottom: 0.5rem;
+}
+
+#carrier p {
     font-size: 1rem;
     color: #747474;
     line-height: 1.2;
