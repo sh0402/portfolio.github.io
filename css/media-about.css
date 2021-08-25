@@ -74,7 +74,6 @@
     #carrier .education-inner,
     #carrier .experience-inner {
         padding: 1rem;
-        background-color: #F1F3F4;
         border-radius: 0.5rem;
     }
 
@@ -151,5 +150,12 @@
     #profile .profile-thumb {
         width: 200px;
         height: 200px;
+    }
+
+    #overview .overview-inner,
+    #carrier .education-inner,
+    #carrier .experience-inner {
+        padding: 1rem;
+        border-radius: 0.5rem;
     }
 }
