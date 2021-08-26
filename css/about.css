@@ -67,12 +67,14 @@
     margin-left: 14rem;
 }
 
-
-
 #overview,
 #carrier {
     padding: 2rem;
     margin-bottom: 2rem;
+}
+
+#carrier {
+    margin-bottom: 0;
 }
 
 #overview h2,
@@ -94,7 +96,7 @@
 }
 
 #overview p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #747474;
     line-height: 1.5;
     margin-block-start: 0;
@@ -184,15 +186,16 @@ aside > div:not(:last-child) {
     top: 50%;
     transform: translateY(-50%);
     display: block;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 0.25rem;
-    border: 2px solid #0074D9;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 0.125rem;
+    background-color: #0074D9;
+    /* border: 2px solid #0074D9; */
 }
 
 #myInfo .myInfo-element p {
     margin: 0;
-    padding-left: 2.5rem;
+    padding-left: 2rem;
 }
 
 #myInfo .myInfo-element .myInfo-list-title {
