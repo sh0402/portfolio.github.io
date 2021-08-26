@@ -49,3 +49,14 @@ const swiper = new Swiper(".mySwiper", {
     }
     
 });
+
+const swiper2 = new Swiper(".mySwiper2", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    grabCursor: true,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});

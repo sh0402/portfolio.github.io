@@ -228,8 +228,11 @@
         margin-inline-start: 0.5rem;
     }
 
-    .swiper-pagination {
-        bottom: 0.5rem;
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 0.4rem;
     }
     
 }
@@ -279,7 +282,10 @@
         padding: 1.5rem 1.5rem;
     }
 
-    .swiper-pagination {
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
         bottom: 0.5rem;
     }
     
@@ -340,8 +346,11 @@
     }
 
 
-    .swiper-pagination {
-        bottom: 1rem;
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 1.25rem;
     }
 }
 
@@ -377,7 +386,10 @@
         left: auto;
     }
 
-    .swiper-pagination {
-        bottom: 2rem;
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 1.75rem;
     }
 }
